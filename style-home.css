@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+}
+
+body {
+    min-width: 367px;
+}
+
+header {
+    background-color: rgb(240, 176, 187);
+    width: 100%;
+    height: 230px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* To center align it horizontally as well*/
+}
+
+.judul h1,.judul p {
+    color: white;
+    text-align: center;
+    /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0px black;
+}
+
+.judul h1 {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.judul p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav {
+    background-color: rgb(29, 28, 28);
+    width: 100%;
+    height: 45px;
+}
+
+.nav ul {
+    padding: 10px 0;
+    margin-left: 20px;
+}
+
+.nav nav ul li {
+    list-style-type: none;
+    float: left;
+    margin-right: 25px;
+    font-size: larger;
+}
+
+.nav nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav nav ul li:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+main {
+    background-color: rgb(223, 195, 165);
+    padding: 50px 0px;
+    width: fit-content;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* To center align it horizontally as well*/
+}
+
+main .card {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: fit-content;
+    max-width: 270px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.greet {
+    background-color: greenyellow;
+}
+
+.nm_roti h2 {
+    text-align: center;
+    background-color: rgb(29, 28, 28);
+    color: white;
+}
+
+.desc figure img {
+    margin: 10px;
+    height: 180px;
+    width: 250px;
+    
+}
+
+.ket {
+    background-color: rgb(29, 28, 28);
+    padding: 6px;
+}
+
+.ket p {
+    margin: 0px 6px;
+    color: white;
+    font-family: Calibri;
+    font-size: 18px;
+}
+
+div .pesan {
+    margin: 10px 10px;
+    padding: 3px;
+    color: white;
+    display: inline-block;
+    background-color: #06a56b;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial;
+    border-radius: 6px;
+    width: 170px;
+    text-align: center;
+}
+
+label div {
+        display: inline;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;    
+}
+
+/*Menyembunyikan checkbox bawaan*/
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    margin-left: 10px;
+}
+
+/* On mouse-over, add a grey background color */
+label div:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+label div input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+label  div input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+label div .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+span.jmlnya {
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+input[type="number"] {
+    width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 4px;
+}
+
+
+input[type=submit] {
+    background-color: #06a56b;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 30px 0px 0px 0px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+footer {
+    background-color: rgb(240, 176, 187);
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* To center align it horizontally as well*/
+}
+
+footer .hakcipta  {
+    color: white;
+    font-family: monospace;
+    font-size: medium;
+    font-weight: bold;
+}

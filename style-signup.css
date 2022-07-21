@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+}
+
+body {
+    min-width: 367px;
+}
+
+body {
+    
+    background-color: rgb(223, 195, 165);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+
+}
+
+div.login-box {
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 400px;
+    height: auto;
+}
+
+.judul {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(240, 176, 187);
+    padding: 6px;
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logininput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    font-family: monospace;
+}
+
+.jdl {
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+input[type="text"],input[type="password"],input[type="email"] {
+    width: 100%;
+    height: 25px;
+    border-radius: 4px;
+    display: table;
+}
+
+label {
+    padding: 10px 12px 0px 0;
+    display: inline-block;
+  }
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+}
+
+.kirim {
+    margin-top: 10px;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 12px;
+    display: none;
+    border: 1px solid rgba(20, 20, 20, 0.5);
+    padding: 15px;
+    border-radius: 6px;
+    text-align: left;
+  }
+
+  .valid {
+    color: rgb(5, 185, 5);
+  }
+
+  .invalid {
+    color: rgb(223, 32, 32);
+  }
